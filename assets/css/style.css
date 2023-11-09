@@ -74,8 +74,8 @@ body {
 @media only screen and (max-width: 600px) {
     .relogio {
         display: flex;
-        height: 22rem;
-        width: 7rem;
+        height: 17rem;
+        width: 9rem;
         background: transparent;
         border-radius: 9px;
         box-shadow: 0px 0px 20px #ff49c8;
@@ -92,7 +92,7 @@ body {
     .relogio div {
         width: 100%;
         height: 6rem;
-        margin-bottom: -1.1000000000000014rem;
+        margin-bottom: -1vw;
     }
 
     .relogio span {
