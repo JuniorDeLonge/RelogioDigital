@@ -9,16 +9,12 @@
 
 body {
     height: 100vh;
-    display: grid;
+    display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-bottom: 3px;
+    justify-content: center;
     background: linear-gradient(-55deg, #9a01c9, #ff0062, #c300ff, #cc014f);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    align-content: space-around;
-    justify-items: center;
-    width: auto;
 }
 
 .relogio {
@@ -34,7 +30,7 @@ body {
     gap: 0.5rem;
 }
 
-.relogio div {
+.relogio div.time {
     height: 17rem;
     width: 15rem;
     display: flex;
@@ -52,6 +48,18 @@ body {
     font-weight: bolder;
     font-size: 110px;
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
 
 @keyframes bounce {
     from {
@@ -76,13 +84,12 @@ body {
 
 @media only screen and (max-width: 600px) {
     .relogio {
+        flex-direction: column;
         height: auto;
-        width: 20vh;
-        flex-direction: row;
-        flex-wrap: wrap;
+        width: 50%;
     }
 
-    .relogio div {
+    .relogio div.time {
         width: 100%;
         height: 6rem;
         margin-bottom: -1vw;
