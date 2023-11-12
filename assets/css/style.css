@@ -8,13 +8,19 @@
 }
 
 body {
-    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
     background: linear-gradient(-55deg, #9a01c9, #ff0062, #c300ff, #cc014f);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .relogio {
@@ -50,16 +56,12 @@ body {
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     text-align: center;
     padding: 10px 0;
 }
-
 
 @keyframes bounce {
     from {
@@ -97,5 +99,9 @@ footer {
 
     .relogio span {
         font-size: 60px;
+    }
+
+    footer {
+        padding: 5px 0;
     }
 }
